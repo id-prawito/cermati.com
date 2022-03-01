@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/89a70f1828.js" crossorigin="anonymous"></script>
+  <title>Prawito | Cermati.com Front-end Developer Entry Test</title>
+</head>
+
+<body>
+  <div id="notification_element" class="notification">
+    <div class="text_notification">By accessing and using this website, you acknowledge that you have read and understand our <a style="color: rgb(8, 8, 216);">Cookie Policy</a>, <a style="color: rgb(8, 8, 216);">Privacy
+        Policy</a>, and our <a style="color: rgb(8, 8, 216);">Terms of Service</a>.
+    </div>
+    <button id="button_g" onclick="removeGotIt()" class="button_got">Got it</button>
+  </div>
+  <header id="header" class="header">
+    <nav class="nav container">
+      <a href="#" class="header_logo">
+        <img src="assets/y-logo-white.png" alt="logo">
+      </a>
+    </nav>
+  </header>
+  <main class="main">
+    <!--=============== Hero Panel ===============-->
+    <div class="home section" id="home">
+      <div class="home_content">
+        <div class="overlay">
+          <div class="content">
+            <h1>Hello! I'm Prawito</h1>
+            <h2>Consult, Design, and Develop Websites</h2>
+            <p>Have something great in mind? Feel free to contact me. <br> I'll help you to make it happen.</p>
+            <button class="button_cermati">Let's Make Contact</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--=============== Highlights Panel ===============-->
+    <div class="highlight section" id="highlight">
+      <div class="highlight_content">
+        <div class="content_desc">
+          <div class="content">
+            <h1>How Can I Help You?</h1>
+            <p class="text_highlight">Our Work then targeted, best practices outcomers social innovation synergy. Venture phylantropy, revolutionary inclusive policymaker relief. User-centered program areas scale.</p>
+          </div>
+        </div>
+        <div class="content_card">
+          <div class="card">
+            <div class="heading">
+              <div class="text_heading">
+                Consult
+              </div>
+              <div class="icon_heading">
+                <i class="fa-regular fa-message"></i>
+              </div>
+            </div>
+            <div class="text_desc">Co-crete, design thinking; strengthen infrastructure resist granular. Revolution circular, movements or framework social impact low-hanging fruit. Save the world compelling
+              revolutonary progress.</div>
+          </div>
+          <div class="card">
+            <div class="heading">
+              <div class="text_heading">
+                Design
+              </div>
+              <div class="icon_heading">
+                <i class="fa-solid fa-paintbrush"></i>
+              </div>
+            </div>
+            <div class="text_desc">Policymaker collaborates collective impact humanitarian shared value vocabulary isnpire issue outcames agile. Overcame injuctice deep dive agile issue outcames vibrant boots on the
+              ground sustainable.</div>
+          </div>
+          <div class="card">
+            <div class="heading">
+              <div class="text_heading">
+                Develop
+              </div>
+              <div class="icon_heading">
+                <i class="fa-solid fa-cubes"></i>
+              </div>
+            </div>
+            <div class="text_desc">Revolutonary circular, movements a or impact framework social impact low-hanging. Save the compelling revolutionary inspire progress. Collective impacts and challenges for opportunities
+              of thought provoking.</div>
+          </div>
+          <div class="card">
+            <div class="heading">
+              <div class="text_heading">
+                Marketing
+              </div>
+              <div class="icon_heading">
+                <i class="fa-solid fa-bullhorn"></i>
+              </div>
+            </div>
+            <div class="text_desc">Peaceful, vibrant paradigm, collaborative cities. Shared vocabulary agile, replicable, effective altruism youth. Mobilize commitment to overcome injustice resillent, uplift social
+              transparent effective.</div>
+          </div>
+          <div class="card">
+            <div class="heading">
+              <div class="text_heading">
+                Manage
+              </div>
+              <div class="icon_heading">
+                <i class="fa-solid fa-bars-progress"></i>
+              </div>
+            </div>
+            <div class="text_desc">Change-makers innovation or shared unit of analysis. Overcame injustice outcomes stratgize vibrant boots on the ground sustainable. Optimism, effective altruism invest optimism
+              corporate social.</div>
+          </div>
+          <div class="card">
+            <div class="heading">
+              <div class="text_heading">
+                Evolve
+              </div>
+              <div class="icon_heading">
+                <i class="fa-solid fa-sliders"></i>
+              </div>
+            </div>
+            <div class="text_desc">Activate catalyze and impcat contextualize humanitarian. Unit of analysis overcome injustice storytelling altruism. Thought leaderhsip mass incarceration. Outcomes big data, fairness,
+              social game-changer.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="popup" class="panel">
+    <div id="btn-set" onclick="hide()" class="button_close">x</div>
+    <div class="content_panel">
+      <div class="text_panel">Get latest updated in web technologies</div>
+      <div class="description">I write artricles related to web technologies, such as design trends, development tools, UI/UX case studies and reviews, and more. Sign up to my newsletter to get them all.</div>
+
+      <form class="form_input" action="POST">
+        <input type="text" placeholder="Email Address">
+        <input type="submit" value="Count me in!">
+      </form>
+
+    </div>
+  </div>
+  <footer class="footer">© 2022 Prawito. All rights reserved.</footer>
+  <script src="main.js"></script>
+</body>
+
+</html>

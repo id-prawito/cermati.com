@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  ---blue: #007bc1;
+  ---dark-blue: #004a75;
+  ---orange: #ff8000;
+  ---dark-orange: #cc6600;
+  ---smoke-grey: #e5e5e5;
+  ---primary-color: #ffffff;
+  ---secondary-color: #222222;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Rubik', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: var(---smoke-grey);
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: unset;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+section {
+  margin: 0px auto;
+  padding: 100px 0px;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: transparent;
+  padding: 10px 20px;
+  margin-top: 60px;
+  transition: 0.4s ease-in-out;
+}
+
+.nav {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  max-width: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.main {
+  /* margin-top: -80px; */
+  overflow: hidden;
+}
+
+.home {
+  margin-top: 60px;
+  transition: 0.4s ease-in-out;
+}
+
+.header_logo {
+  --size: 40px;
+  width: var(--size);
+  height: var(--size);
+}
+
+.home_content {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url("assets/bg.jpg");
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0 34 69 / 75%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 40px;
+}
+
+.content h1 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+  margin: 0px;
+}
+
+.content h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0px;
+}
+
+.content p {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0px;
+}
+
+.button_cermati {
+  padding: 20px 30px;
+  border: 1px solid var(---primary-color);
+  outline: none;
+  background: transparent;
+  color: var(---primary-color);
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  width: max-content;
+  margin-top: 20px;
+}
+
+.button_cermati:hover {
+  background-color: var(---primary-color);
+  color: var(---dark-blue);
+}
+
+.highlight {
+  height: 100%;
+  display: flex;
+  padding: 10px 20px;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  margin: 40px 0px;
+}
+
+.highlight_content {
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  margin: 0px 20px;
+  width: 100%;
+}
+
+.content_card {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 40px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  border: 1px solid #989898;
+  padding: 20px;
+  height: 200px;
+  gap: 20px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.text_heading {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0px;
+}
+
+.icon_heading {
+  font-size: 20px;
+}
+
+.text_desc {
+  font-size: 14px;
+}
+
+.footer {
+  background-color: #002338;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  width: 100%;
+  height: 80px;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.text_highlight {
+  width: 600px;
+}
+
+.panel {
+  position: fixed;
+  width: 640px;
+  background-color: #007bc1e6;
+  height: 240px;
+  bottom: 0;
+  padding: 40px;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.content_panel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: var(---primary-color);
+}
+
+.button_close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  cursor: pointer;
+  color: var(---primary-color);
+}
+
+.text_panel {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0px;
+}
+
+.description {
+  font-size: 15px;
+}
+
+.form_input {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: var(---orange);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: var(---dark-orange);
+}
+
+.notification {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-size: 14px;
+  gap: 20px;
+  background-color: var(---smoke-grey);
+  position: fixed;
+  z-index: 200;
+}
+
+.slideOut {
+  transform: translateY(-10px);
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.slideIn {
+  transform: translateY(-50px);
+  opacity: 0.5;
+  transition: 0.3s ease-in;
+}
+
+.text_notification {
+  font-size: 14px;
+  width: 600px;
+}
+
+.button_got {
+  outline: none;
+  height: 40px;
+  border: none;
+  background-color: #007bc1;
+  color: var(---primary-color);
+  padding: 0px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+  .highlight {
+    height: 100%;
+    padding: 40px 20px;
+  }
+
+  .content {
+    padding: 0px;
+  }
+
+  .text_highlight {
+    width: 100%;
+  }
+
+  .content_card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+  }
+
+  .notification {
+    height: 140px;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .text_notification {
+    width: 100%;
+  }
+
+  .panel {
+    width: 100%;
+    padding: 20px;
+    height: 300px;
+  }
+
+  .form_input {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 960px) {
+  .content_card {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 20px;
+  }
+
+  .highlight {
+    height: 100%;
+    padding: 40px 20px;
+  }
+
+  .text_highlight {
+    width: 100%;
+  }
+
+  .card {
+    height: 45vh;
+  }
+
+  .panel {
+    width: 100%;
+    padding: 20px;
+    height: 250px;
+  }
+
+  .notification {
+    height: 140px;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .text_notification {
+    width: 100%;
+  }
+}
